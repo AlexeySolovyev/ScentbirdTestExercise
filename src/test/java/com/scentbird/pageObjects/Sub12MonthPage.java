@@ -33,7 +33,7 @@ public class Sub12MonthPage extends BaseClass {
 
     @FindBy(xpath = "//div[contains(text(),'right now')]")
     @CacheLookup
-    WebElement sendRightNowRadioButton;
+    WebElement clickRightNowRadioButton;
 
     @FindBy(xpath = "//div[contains(text(),'later date')]")
     @CacheLookup
@@ -43,13 +43,25 @@ public class Sub12MonthPage extends BaseClass {
     @CacheLookup
     WebElement monthDropDown;
 
+    @FindBy(css = "option[value='09']")
+    @CacheLookup
+    WebElement month;
+
     @FindBy(id = "simpleSelect_8")
     @CacheLookup
     WebElement dayDropDown;
 
+    @FindBy(css = "option[value='19']")
+    @CacheLookup
+    WebElement day;
+
     @FindBy(id = "simpleSelect_9")
     @CacheLookup
     WebElement yearDropDown;
+
+    @FindBy(css = "option[value='2021']")
+    @CacheLookup
+    WebElement year;
 
     @FindBy(css = "img[class='w-full']")
     @CacheLookup
@@ -112,7 +124,20 @@ public class Sub12MonthPage extends BaseClass {
     }
 
     public void clickSendItRightNowRadioButton() {
-        sendRightNowRadioButton.click();
+        clickRightNowRadioButton.click();
+    }
+
+    public void clickChooseLateDateRadioButton() {
+        chooseDateToSendRadioButton.click();
+    }
+
+    public void setLateDate() {
+        monthDropDown.click();
+        month.click();
+        dayDropDown.click();
+        day.click();
+        yearDropDown.click();
+        year.click();
     }
 
     public void typeName() {
@@ -120,7 +145,6 @@ public class Sub12MonthPage extends BaseClass {
         nameField.clear();
         nameField.sendKeys("TestName1");
         mainPicture.click();
-
     }
 
     public void checkName() {
