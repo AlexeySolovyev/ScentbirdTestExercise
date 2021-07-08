@@ -35,6 +35,22 @@ public class Sub12MonthPage extends BaseClass {
     @CacheLookup
     WebElement sendRightNowRadioButton;
 
+    @FindBy(xpath = "//div[contains(text(),'later date')]")
+    @CacheLookup
+    WebElement chooseDateToSendRadioButton;
+
+    @FindBy(id = "simpleSelect_7")
+    @CacheLookup
+    WebElement monthDropDown;
+
+    @FindBy(id = "simpleSelect_8")
+    @CacheLookup
+    WebElement dayDropDown;
+
+    @FindBy(id = "simpleSelect_9")
+    @CacheLookup
+    WebElement yearDropDown;
+
     @FindBy(css = "img[class='w-full']")
     @CacheLookup
     WebElement mainPicture;
@@ -46,6 +62,10 @@ public class Sub12MonthPage extends BaseClass {
     @FindBy(css = "div[class=\"_3SLe56 _3KO5kB\"]")
     @CacheLookup
     WebElement nameText;
+
+    @FindBy(xpath = "//span[contains(text(),'Edit')]")
+    @CacheLookup
+    WebElement editButton;
 
     @FindBy(id = "input_6")
     @CacheLookup
@@ -85,6 +105,10 @@ public class Sub12MonthPage extends BaseClass {
 
     public void clickForHimRadioButton() {
         maleRadioButton.click();
+    }
+
+    public void clickForHerRadioButton() {
+        femaleRadioButton.click();
     }
 
     public void clickSendItRightNowRadioButton() {

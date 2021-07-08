@@ -3,7 +3,7 @@ package com.scentbird.testCases;
 import com.scentbird.pageObjects.Sub12MonthPage;
 import org.testng.annotations.Test;
 
-public class Sub12MonthTest_001 extends BaseClass{
+public class Sub12MonthForHimTest_001 extends BaseClass{
 
     @Test
     public void Sub12MonthTest() {
