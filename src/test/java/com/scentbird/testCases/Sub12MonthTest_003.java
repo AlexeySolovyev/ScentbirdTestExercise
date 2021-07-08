@@ -3,7 +3,7 @@ package com.scentbird.testCases;
 import com.scentbird.pageObjects.Sub12MonthPage;
 import org.testng.annotations.Test;
 
-// for him, choose a later date to send options
+// 12m, for him, choose a later date to send, send personal message options
 
 public class Sub12MonthTest_003 extends BaseClass {
 

@@ -1,6 +1,5 @@
 package com.scentbird.pageObjects;
 
-import com.scentbird.testCases.BaseClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -8,16 +7,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class Sub12MonthPage {
+public class Sub6MonthPage {
+
     WebDriver localDriver;
-    public Sub12MonthPage(WebDriver remoteDriver) {
+    public Sub6MonthPage(WebDriver remoteDriver) {
         localDriver = remoteDriver;
         PageFactory.initElements(remoteDriver, this);
     }
 
-    @FindBy(xpath = "//span[contains(text(),'12 months')]")
+    @FindBy(xpath = "//span[contains(text(),'6 months')]")
     @CacheLookup
-    WebElement continue12MonthButton;
+    WebElement continue6MonthButton;
 
     @FindBy(css = "span[class='_1fjNH- _3KO5kB']")
     @CacheLookup
@@ -71,7 +71,7 @@ public class Sub12MonthPage {
     @CacheLookup
     WebElement nameField;
 
-    @FindBy(css = "div[class=\"_3SLe56 _3KO5kB\"]")
+    @FindBy(css = "div[class='_3SLe56 _3KO5kB']")
     @CacheLookup
     WebElement nameText;
 
@@ -83,7 +83,7 @@ public class Sub12MonthPage {
     @CacheLookup
     WebElement emailField;
 
-    @FindBy(css = "div[class=\"_3SLe56 _3KO5kB\"]")
+    @FindBy(css = "div[class='_3SLe56 _3KO5kB']")
     @CacheLookup
     WebElement emailText;
 
@@ -103,8 +103,8 @@ public class Sub12MonthPage {
     @CacheLookup
     WebElement LoginToAccount;
 
-    public void clickContinue12MonthSub() {
-        continue12MonthButton.click();
+    public void clickContinue6MonthSub() {
+        continue6MonthButton.click();
     }
 
     public void checkPromoTitle() {
@@ -196,4 +196,6 @@ public class Sub12MonthPage {
             Assert.assertFalse(false);
         }
     }
+
 }
+

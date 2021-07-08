@@ -3,9 +3,10 @@ package com.scentbird.testCases;
 import com.scentbird.pageObjects.Sub12MonthPage;
 import org.testng.annotations.Test;
 
-// for her, send it right now options
+// for her, send it right now, send personal message options
 
 public class Sub12MonthTest_002 extends BaseClass{
+
     @Test
     public void Sub12MonthTest() {
         driver.get(baseURL);

@@ -1,30 +1,27 @@
 package com.scentbird.testCases;
 
-import com.scentbird.pageObjects.Sub12MonthPage;
+import com.scentbird.pageObjects.Sub6MonthPage;
 import org.testng.annotations.Test;
 
-// 12m, for her, choose a later date to send, send personal message options
+// 6m, for him, choose a later date to send, without message options
 
-public class Sub12MonthTest_004 extends BaseClass {
+public class Sub6MonthTest_015 extends BaseClass {
 
     @Test
-    public void Sub12MothTest() {
+    public void Sub6MonthTest() {
         driver.get(baseURL);
-        Sub12MonthPage subscriptionPage = new Sub12MonthPage(driver);
+        Sub6MonthPage subscriptionPage = new Sub6MonthPage(driver);
 
-        subscriptionPage.clickContinue12MonthSub();
+        subscriptionPage.clickContinue6MonthSub();
         subscriptionPage.checkPromoTitle();
-        subscriptionPage.clickForHerRadioButton();
+        subscriptionPage.clickForHimRadioButton();
         subscriptionPage.clickChooseLateDateRadioButton();
         subscriptionPage.setLateDate();
         subscriptionPage.typeName();
         subscriptionPage.checkName();
         subscriptionPage.typeEmail();
         subscriptionPage.checkEmail();
-        subscriptionPage.typePersonalMessage();
-        subscriptionPage.checkMessageText();
         subscriptionPage.clickReviewOrderButton();
         subscriptionPage.checkLoginPage();
-        }
     }
-
+}

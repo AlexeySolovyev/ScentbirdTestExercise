@@ -1,6 +1,5 @@
 package com.scentbird.pageObjects;
 
-import com.scentbird.testCases.BaseClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -8,14 +7,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class Sub12MonthPage {
+public class Sub3MonthPage {
+
     WebDriver localDriver;
-    public Sub12MonthPage(WebDriver remoteDriver) {
+    public Sub3MonthPage(WebDriver remoteDriver) {
         localDriver = remoteDriver;
         PageFactory.initElements(remoteDriver, this);
     }
 
-    @FindBy(xpath = "//span[contains(text(),'12 months')]")
+    @FindBy(xpath = "//span[contains(text(),'12')]")
     @CacheLookup
     WebElement continue12MonthButton;
 
