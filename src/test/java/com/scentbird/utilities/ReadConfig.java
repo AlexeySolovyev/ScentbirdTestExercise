@@ -5,8 +5,10 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class ReadConfig {
+
     Properties properties;
-    public void ReadConfig() {
+
+    public ReadConfig() {
         File src = new File("./Configuration/config.properties");
 
         try {
@@ -19,28 +21,15 @@ public class ReadConfig {
     }
 
     public String getURL() {
-        String url = properties.getProperty("baseURL");
-        return url;
+        return properties.getProperty("baseURL");
     }
 
-    public String getUserName() {
-        String userName = properties.getProperty("userName");
-        return userName;
-    }
-
-    public String getUserEmail() {
-        String userEmail = properties.getProperty("userEmail");
-        return userEmail;
-    }
-
-    public String getChromePatch() {
-        String chromepath = properties.getProperty("chromepath");
-        return chromepath;
+    public String getChromePath() {
+        return properties.getProperty("chromepath");
     }
 
     public String getFirefoxPath() {
-        String firefoxpath = properties.getProperty("firefox");
-        return firefoxpath;
+        return properties.getProperty("firefox");
     }
 
 }
