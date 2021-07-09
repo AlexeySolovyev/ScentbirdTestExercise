@@ -3,12 +3,12 @@ package com.scentbird.testCases;
 import com.scentbird.pageObjects.Sub12MonthPage;
 import org.testng.annotations.Test;
 
-// for him, send it right now, without personal message options
+// 12m, for him, send it right now, without personal message options
 
 public class Sub12MonthTest_005 extends BaseClass{
 
     @Test
-    public void Sub12MonthTest() {
+    public void sub12MonthTest() {
         driver.get(baseURL);
         Sub12MonthPage subscriptionPage = new Sub12MonthPage(driver);
 

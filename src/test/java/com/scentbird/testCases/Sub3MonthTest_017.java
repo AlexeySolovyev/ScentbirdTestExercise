@@ -1,20 +1,20 @@
 package com.scentbird.testCases;
 
-import com.scentbird.pageObjects.Sub12MonthPage;
+import com.scentbird.pageObjects.Sub3MonthPage;
 import org.testng.annotations.Test;
 
-// 12m, for her, send it right now, send personal message options
+// 3m, for him, send it right now, send personal message options
 
-public class Sub12MonthTest_002 extends BaseClass{
+public class Sub3MonthTest_017 extends BaseClass {
 
     @Test
-    public void sub12MonthTest() {
+    public void sub3MonthTest() {
         driver.get(baseURL);
-        Sub12MonthPage subscriptionPage = new Sub12MonthPage(driver);
+        Sub3MonthPage subscriptionPage = new Sub3MonthPage(driver);
 
-        subscriptionPage.clickContinue12MonthSub();
+        subscriptionPage.clickContinue3MonthSub();
         subscriptionPage.checkPromoTitle();
-        subscriptionPage.clickForHerRadioButton();
+        subscriptionPage.clickForHimRadioButton();
         subscriptionPage.clickSendItRightNowRadioButton();
         subscriptionPage.typeName();
         subscriptionPage.checkName();

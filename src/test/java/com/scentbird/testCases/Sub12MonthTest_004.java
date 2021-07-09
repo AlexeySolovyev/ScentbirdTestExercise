@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class Sub12MonthTest_004 extends BaseClass {
 
     @Test
-    public void Sub12MothTest() {
+    public void sub12MothTest() {
         driver.get(baseURL);
         Sub12MonthPage subscriptionPage = new Sub12MonthPage(driver);
 

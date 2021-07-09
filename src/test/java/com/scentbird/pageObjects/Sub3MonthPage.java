@@ -15,9 +15,9 @@ public class Sub3MonthPage {
         PageFactory.initElements(remoteDriver, this);
     }
 
-    @FindBy(xpath = "//span[contains(text(),'12')]")
+    @FindBy(xpath = "//span[contains(text(),'3')]")
     @CacheLookup
-    WebElement continue12MonthButton;
+    WebElement continue3MonthButton;
 
     @FindBy(css = "span[class='_1fjNH- _3KO5kB']")
     @CacheLookup
@@ -103,12 +103,12 @@ public class Sub3MonthPage {
     @CacheLookup
     WebElement LoginToAccount;
 
-    public void clickContinue12MonthSub() {
-        continue12MonthButton.click();
+    public void clickContinue3MonthSub() {
+        continue3MonthButton.click();
     }
 
     public void checkPromoTitle() {
-        if (promoTitle.getText().contains("12 months gift subscription")) {
+        if (promoTitle.getText().contains("3 months gift subscription")) {
             Assert.assertTrue(true);
         } else {
             Assert.assertFalse(false);
