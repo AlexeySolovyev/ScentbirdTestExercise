@@ -5,7 +5,6 @@
     <test name="ScentbirdTest">
         <parameter name="browser" value="chrome"/>
         <classes>
-
             <class name="com.scentbird.testCases.Sub12MonthTest_001"/>
             <class name="com.scentbird.testCases.Sub12MonthTest_002"/>
             <class name="com.scentbird.testCases.Sub12MonthTest_003"/>
@@ -30,7 +29,6 @@
             <class name="com.scentbird.testCases.Sub3MonthTest_022"/>
             <class name="com.scentbird.testCases.Sub3MonthTest_023"/>
             <class name="com.scentbird.testCases.Sub3MonthTest_024"/>
-
         </classes>
     </test>
 </suite>

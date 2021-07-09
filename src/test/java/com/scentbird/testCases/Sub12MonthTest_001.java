@@ -2,8 +2,8 @@ package com.scentbird.testCases;
 
 import com.scentbird.pageObjects.Sub12MonthPage;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 // 12m, for him, send it right now, send personal message options
 
@@ -16,6 +16,7 @@ public class Sub12MonthTest_001 extends BaseClass{
         Sub12MonthPage subscriptionPage = new Sub12MonthPage(driver);
 
         subscriptionPage.clickContinue12MonthSub();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         subscriptionPage.checkPromoTitle();
         subscriptionPage.clickForHimRadioButton();
         subscriptionPage.clickSendItRightNowRadioButton();
@@ -26,6 +27,7 @@ public class Sub12MonthTest_001 extends BaseClass{
         subscriptionPage.typePersonalMessage();
         subscriptionPage.checkMessageText();
         subscriptionPage.clickReviewOrderButton();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         subscriptionPage.checkLoginPage();
     }
 }

@@ -4,6 +4,7 @@ import com.scentbird.pageObjects.Sub3MonthPage;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class Sub3MonthTest_018  extends BaseClass {
 
@@ -13,6 +14,7 @@ public class Sub3MonthTest_018  extends BaseClass {
         Sub3MonthPage subscriptionPage = new Sub3MonthPage(driver);
 
         subscriptionPage.clickContinue3MonthSub();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         subscriptionPage.checkPromoTitle();
         subscriptionPage.clickForHerRadioButton();
         subscriptionPage.clickSendItRightNowRadioButton();
@@ -23,6 +25,7 @@ public class Sub3MonthTest_018  extends BaseClass {
         subscriptionPage.typePersonalMessage();
         subscriptionPage.checkMessageText();
         subscriptionPage.clickReviewOrderButton();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         subscriptionPage.checkLoginPage();
     }
 }

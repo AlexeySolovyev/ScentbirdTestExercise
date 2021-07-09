@@ -4,6 +4,7 @@ import com.scentbird.pageObjects.Sub6MonthPage;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 // 6m, for him, send it right now, send personal message options
 
@@ -15,6 +16,7 @@ public class Sub6MonthTest_010 extends BaseClass {
         Sub6MonthPage subscriptionPage = new Sub6MonthPage(driver);
 
         subscriptionPage.clickContinue6MonthSub();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         subscriptionPage.checkPromoTitle();
         subscriptionPage.clickForHerRadioButton();
         subscriptionPage.clickSendItRightNowRadioButton();
@@ -25,6 +27,7 @@ public class Sub6MonthTest_010 extends BaseClass {
         subscriptionPage.typePersonalMessage();
         subscriptionPage.checkMessageText();
         subscriptionPage.clickReviewOrderButton();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         subscriptionPage.checkLoginPage();
     }
 }
