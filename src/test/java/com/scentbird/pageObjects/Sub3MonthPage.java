@@ -1,5 +1,6 @@
 package com.scentbird.pageObjects;
 
+import com.scentbird.testCases.BaseClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -7,7 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class Sub3MonthPage {
+import java.io.IOException;
+
+public class Sub3MonthPage extends BaseClass {
 
     WebDriver localDriver;
     public Sub3MonthPage(WebDriver remoteDriver) {
@@ -107,10 +110,13 @@ public class Sub3MonthPage {
         continue3MonthButton.click();
     }
 
-    public void checkPromoTitle() {
+    public void checkPromoTitle() throws IOException {
         if (promoTitle.getText().contains("3 months gift subscription")) {
+            logger.info("Promo title checked, OK");
             Assert.assertTrue(true);
         } else {
+            logger.info("Promo title is invalid");
+            captureScreen(localDriver, "3 Month Test Case");
             Assert.assertFalse(false);
         }
     }
@@ -147,10 +153,13 @@ public class Sub3MonthPage {
         mainPicture.click();
     }
 
-    public void checkName() {
+    public void checkName() throws IOException {
         if (nameText.getText().contains("TestName1")) {
+            logger.info("Name checked, OK");
             Assert.assertTrue(true);
         } else {
+            logger.info("Name is invalid");
+            captureScreen(localDriver, "3 Month Test Case");
             Assert.assertFalse(false);
         }
     }
@@ -162,10 +171,13 @@ public class Sub3MonthPage {
         mainPicture.click();
     }
 
-    public void checkEmail() {
+    public void checkEmail() throws IOException {
         if (emailText.getText().contains("testuser1@gmail.org")) {
+            logger.info("Email checked, OK");
             Assert.assertTrue(true);
         } else {
+            logger.info("Email is invalid");
+            captureScreen(localDriver, "3 Month Test Case");
             Assert.assertFalse(false);
         }
     }
@@ -177,10 +189,13 @@ public class Sub3MonthPage {
         mainPicture.click();
     }
 
-    public void checkMessageText() {
+    public void checkMessageText() throws IOException {
         if (messageText.getText().contains("Happy birthday!")) {
+            logger.info("Message checked, OK");
             Assert.assertTrue(true);
         } else {
+            logger.info("Message is invalid");
+            captureScreen(localDriver, "3 Month Test Case");
             Assert.assertFalse(false);
         }
     }
@@ -189,10 +204,13 @@ public class Sub3MonthPage {
         reviewOrderButton.click();
     }
 
-    public void checkLoginPage() {
+    public void checkLoginPage() throws IOException {
         if (LoginToAccount.getText().contains("Log in to your ")) {
+            logger.info("Login page has been appeared, OK");
             Assert.assertTrue(true);
         } else {
+            logger.info("Login Page title didn't appear, not good...");
+            captureScreen(localDriver, "3 Month Test Case");
             Assert.assertFalse(false);
         }
     }
