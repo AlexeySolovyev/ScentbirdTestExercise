@@ -6,7 +6,7 @@
         <parameter name="browser" value="chrome"/>
         <classes>
 
-            <!--<class name="com.scentbird.testCases.Sub12MonthTest_001"/>
+            <class name="com.scentbird.testCases.Sub12MonthTest_001"/>
             <class name="com.scentbird.testCases.Sub12MonthTest_002"/>
             <class name="com.scentbird.testCases.Sub12MonthTest_003"/>
             <class name="com.scentbird.testCases.Sub12MonthTest_004"/>
@@ -21,15 +21,15 @@
             <class name="com.scentbird.testCases.Sub6MonthTest_013"/>
             <class name="com.scentbird.testCases.Sub6MonthTest_014"/>
             <class name="com.scentbird.testCases.Sub6MonthTest_015"/>
-            <class name="com.scentbird.testCases.Sub6MonthTest_016"/> -->
+            <class name="com.scentbird.testCases.Sub6MonthTest_016"/>
             <class name="com.scentbird.testCases.Sub3MonthTest_017"/>
-            <!-- <class name="com.scentbird.testCases.Sub3MonthTest_018"/>
+            <class name="com.scentbird.testCases.Sub3MonthTest_018"/>
             <class name="com.scentbird.testCases.Sub3MonthTest_019"/>
             <class name="com.scentbird.testCases.Sub3MonthTest_020"/>
             <class name="com.scentbird.testCases.Sub3MonthTest_021"/>
             <class name="com.scentbird.testCases.Sub3MonthTest_022"/>
             <class name="com.scentbird.testCases.Sub3MonthTest_023"/>
-            <class name="com.scentbird.testCases.Sub3MonthTest_024"/> -->
+            <class name="com.scentbird.testCases.Sub3MonthTest_024"/>
 
         </classes>
     </test>

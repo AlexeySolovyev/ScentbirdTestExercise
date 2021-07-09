@@ -1,9 +1,11 @@
 package com.scentbird.testCases;
 
 import com.scentbird.pageObjects.Sub3MonthPage;
+import org.testng.annotations.Test;
 
 public class Sub3MonthTest_024 extends BaseClass {
 
+    @Test
     public void sub3MonthTest() {
 
         driver.get(baseURL);

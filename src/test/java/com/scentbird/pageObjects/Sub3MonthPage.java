@@ -15,7 +15,7 @@ public class Sub3MonthPage {
         PageFactory.initElements(remoteDriver, this);
     }
 
-    @FindBy(xpath = "//span[contains(text(),'3')]")
+    @FindBy(xpath = "//span[contains(text(),'3 month')]")
     @CacheLookup
     WebElement continue3MonthButton;
 
