@@ -1,3 +1,6 @@
+This is the technical exercise for Scentbird Company.
+The project includes common 24 positive test cases for https://scentbird.com/gift production page.
+
 Developed in Mac OS Big Sur version 11.4 with IntelliJ Idea 2021.1.3 Ultimate
 
 Chrome ver. 91.0.4472.114 (Official Build) (x86_64)
@@ -15,6 +18,3 @@ Java version is:
     OpenJDK Runtime Environment (build 11.0.2+7-27)
     OpenJDK 64-Bit Server VM (build 11.0.2+7-27, mixed mode, sharing)
 
-
-To run this from Command line:
-From teriminal, go to take-home-webdriver-test and run "mvn test"
